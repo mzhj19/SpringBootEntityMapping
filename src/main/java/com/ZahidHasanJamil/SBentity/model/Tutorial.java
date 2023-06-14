@@ -3,8 +3,8 @@ package com.ZahidHasanJamil.SBentity.model;
 import java.util.HashSet;
 import java.util.Set;
 
-//import javax.persistence.*;
-import jakarta.persistence.*; // for Spring Boot 3
+
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "tutorials")

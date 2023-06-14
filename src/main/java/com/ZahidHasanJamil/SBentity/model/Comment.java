@@ -1,7 +1,6 @@
 package com.ZahidHasanJamil.SBentity.model;
 
-//import javax.persistence.*;
-import jakarta.persistence.*; // for Spring Boot 3
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "comments")
