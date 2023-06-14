@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 @Entity
@@ -25,6 +26,7 @@ public class Tutorial {
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = true)
     @JoinColumn(name = "tutorial_id")
+    //@JsonIgnore
     private Set<Comment> comments = new HashSet<>();
 
     public Tutorial() {
